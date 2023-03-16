@@ -2,7 +2,7 @@
 
 from pydantic import BaseModel
 class PredictRequestDTO(BaseModel):
-    patientID: int
+    patientID: str
     PL: int
     Age: int
     M11: float

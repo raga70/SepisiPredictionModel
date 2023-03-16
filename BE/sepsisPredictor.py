@@ -54,7 +54,6 @@ def predict(patientRequestDTO: PredictRequestDTO) -> Patient:
     
     from sklearn.model_selection import train_test_split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-    print("There are in total", len(X), "observations, of which", len(X_train), "are now in the train set, and", len(X_test), "in the test set.")
     
     
     from sklearn.linear_model import LogisticRegression
