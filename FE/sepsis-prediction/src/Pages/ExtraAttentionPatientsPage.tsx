@@ -2,6 +2,7 @@
 import {PatientResponceDTO} from "../Model/PatientResponceDTO";
 import {getExtraAttentionPatients} from "../api";
 import {Input,Button, Card, Typography} from '@mui/joy';
+
 export const ExtraAttentionPatientsPage = () => {
 
     const [patients, setPatients] = useState<PatientResponceDTO[]>([]);
@@ -20,13 +21,13 @@ export const ExtraAttentionPatientsPage = () => {
         }
     }
     const convertCertaintyResult = (result: number) => {
-        return result*100 + "%"
+        return (result*100).toString().substring(0,4) + "%"
     }
    
     return (
-        <div style={{display:"grid" , marginTop:30, alignItems:"center", justifyContent:"space-around"}}>
+        <div style={{display:"grid" ,justifyItems:"center",marginTop:50 ,gridTemplateColumns:"auto auto auto auto"}}>
             {patients.map((patient)=>(
-                <Card variant="outlined" sx={{ width: 320 }}>
+                <Card className={"card"}  style={{backgroundColor:"#98E2C6" , color:"#545C52"}} variant="plain" sx={{marginBottom:5, width: 320 }}>
                     <Typography level="h1" fontSize="md" sx={{ mb: 0.5 }}>
                         #: {patient.patientID}
                     </Typography>

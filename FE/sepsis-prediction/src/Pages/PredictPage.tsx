@@ -19,7 +19,10 @@ export const PredictPage = () => {
             return "Negative"
         }
     }
-    
+
+    const convertCertaintyResult = (result: number) => {
+        return (result*100).toString().substring(0,4) + "%"
+    }
     
     const SubmitPatient = async () =>{
         let response = await enterPatirnt(newPatient)
@@ -77,8 +80,8 @@ export const PredictPage = () => {
                       #: {ResultPatient.patientID}
                    </Typography>
                    <br/>
-                   <Typography level="h3" style={{fontWeight:"bold"}} fontSize="md" sx={{ mb: 0.5 }}>Result:{convertResult(ResultPatient.sepsisPrediction)}</Typography>
-                   <Typography level="h3" style={{fontWeight:"bold"}} fontSize="md" sx={{ mb: 0.5 }}>Certainty:{ResultPatient.certainty}</Typography>
+                   <Typography level="h3" style={{fontWeight:"bold"}} fontSize="md" sx={{ mb: 0.5 }}>Result: {convertResult(ResultPatient.sepsisPrediction)}</Typography>
+                   <Typography level="h3" style={{fontWeight:"bold"}} fontSize="md" sx={{ mb: 0.5 }}>Certainty: {convertCertaintyResult(ResultPatient.certainty)}</Typography>
                    <br/>
                    <br/>
                    <Typography style={{fontWeight:"lighter"}}  fontSize="sm" sx={{ mb: 0.5 }}>Age:{ResultPatient.Age}</Typography>
