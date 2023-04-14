@@ -6,11 +6,11 @@ This project aims to develop a model that can predict sepsis. Sepsis is a life-t
 
 ## **Domain Understanding**
 
-Please refer to the **[Domain Understanding document](https://github.com/raga70/SepisiPredictionModel/blob/main/Domain%20Understanding.pdf)** for more information on the exploratory research, co-reflection with a fellow student, and interview with an expert.
+Please refer to the **[Domain Understanding document](https://github.com/raga70/SepisiPredictionModel/blob/master/ReserchAndModelCreation/DomainUnderstanding.pdf)** for more information on the exploratory research, co-reflection with a fellow student, and interview with an expert.
 
 ## **Data Sourcing**
 
-The dataset used for this project is provided by Johns Hopkins University. For more detailed information, please refer to the notebook of **[iteration1](https://github.com/raga70/SepisiPredictionModel/blob/main/Iteration1.ipynb)**.
+The dataset used for this project is provided by Johns Hopkins University. For more detailed information, please refer to the notebook of **[MAINnotebook](https://github.com/raga70/SepisiPredictionModel/blob/master/ReserchAndModelCreation/MAINmodelNotebook.pdf)**.
 
 ## **Analytical Approach**
 
@@ -31,6 +31,9 @@ The end product consists of a REST API backend and a web application frontend. T
 
 The web application provides a simple interface for medical professionals to enter a new result and receive an instantaneous prediction. If the medical professional navigates to the ExtraAttentionPatients page, they will be presented with patients that might require a second look.
 
+A small presentation of the finished product is available at **[Tome](https://tome.app/ragasworkspace/sepsis-predictor-3000-clgcdr0cg00pyap42l7fw5kd8)** 
+
+
 ## **How to Use**
 
-This tool should only be used to give you a general tip about patients that might have been left unnoticed. It should not be used to determine a diagnosis; it can only point you in the right direction. Please refer to the **[web application documentation](https://github.com/raga70/SepisiPredictionModel/blob/main/webApp/README.md)** for more information on how to use the tool
+This tool should only be used to give you a general tip about patients that might have been left unnoticed. It should not be used to determine a diagnosis; it can only point you in the right direction.
