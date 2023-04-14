@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sepsisDataTransformer", "sepsisDataTransformer\sepsisDataTransformer.csproj", "{914DC3B9-FEA9-4CFB-BB96-212D37DA2418}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{914DC3B9-FEA9-4CFB-BB96-212D37DA2418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914DC3B9-FEA9-4CFB-BB96-212D37DA2418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914DC3B9-FEA9-4CFB-BB96-212D37DA2418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914DC3B9-FEA9-4CFB-BB96-212D37DA2418}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
